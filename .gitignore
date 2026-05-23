@@ -1,0 +1,20 @@
+# Local setup scripts
+setup.ps1
+
+# .NET
+**/bin/
+**/obj/
+
+# React
+**/node_modules/
+**/.vite/
+**/.vite-temp/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
