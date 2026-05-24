@@ -85,7 +85,7 @@ public class TaskService : ITaskService
                 userId);
 
         if (existing is null)
-            throw new Exception("Task not found");
+            throw new KeyNotFoundException("Task not found");
 
         existing.Title = request.Title;
         existing.Description = request.Description;
