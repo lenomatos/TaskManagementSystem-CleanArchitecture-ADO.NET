@@ -25,6 +25,9 @@ builder.Services.AddScoped<IUserRepository>(_ =>
 builder.Services.AddScoped<ITaskRepository>(_ =>
     new TaskRepository(connectionString));
 
+builder.Services.ConfigureCors(
+    builder.Configuration);
+
 builder.Services.AddControllers();
 
 builder.Services.ConfigureSwagger();
@@ -38,6 +41,8 @@ var app = builder.Build();
 app.UseSwaggerDocumentation();
 
 app.UseHttpsRedirection();
+
+app.UseCors(CorsExtensions.WebUiPolicy);
 
 app.UseAuthentication();
 app.UseAuthorization();

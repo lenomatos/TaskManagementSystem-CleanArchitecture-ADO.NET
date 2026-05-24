@@ -10,7 +10,7 @@ DECLARE @DemoUserId UNIQUEIDENTIFIER = NEWID();
 
 INSERT INTO Users (Id, Username, PasswordHash)
 VALUES 
-    (@DemoUserId, 'demo', '$2a$11$N9qo8uLOickgx2ZMRZoMye'); -- Replace with actual BCrypt hash
+    (@DemoUserId, 'demo', '$2a$11$n6Yz0ZTN0DzNfkTdipqXeObzewlJHuF4eZk70yREu0I1MvPRXUsJG'); -- Replace with actual BCrypt hash
 
 -- Insert sample tasks for demo user
 INSERT INTO Tasks (Id, Title, Description, Status, DueDate, UserId)
