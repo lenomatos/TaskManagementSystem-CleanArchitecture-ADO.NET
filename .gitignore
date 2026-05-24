@@ -1,19 +1,34 @@
 # Local setup scripts
 setup.ps1
 
+# Configuration & Secrets
+appsettings.json
+appsettings.*.json
+.env
+.env.local
+.env.*.local
+
 # .NET
 **/bin/
 **/obj/
+**/.vs/
+*.csproj.user
+*.sln.user
+.nuget/
 
 # React
 **/node_modules/
 **/.vite/
 **/.vite-temp/
+dist/
 
 # IDE
 .vs/
 .vscode/
 .idea/
+*.swp
+*.swo
+*~
 
 # OS
 Thumbs.db
