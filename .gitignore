@@ -4,6 +4,9 @@ setup.ps1
 # Configuration & Secrets
 appsettings.json
 appsettings.*.json
+**/appsettings.*.json
+**/appsettings.json
+
 .env
 .env.local
 .env.*.local
