@@ -28,6 +28,7 @@ public class TaskService : ITaskService
             Title = t.Title,
             Description = t.Description,
             Status = t.Status,
+            StatusName = t.Status.ToString(),
             DueDate = t.DueDate
         });
     }
@@ -68,6 +69,7 @@ public class TaskService : ITaskService
             Title = task.Title,
             Description = task.Description,
             Status = task.Status,
+            StatusName = task.Status.ToString(),
             DueDate = task.DueDate
         };
     }

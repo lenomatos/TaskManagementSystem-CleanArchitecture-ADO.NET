@@ -12,5 +12,7 @@ public class TaskResponse
 
     public TaskItemStatus  Status { get; set; }
 
+    public string StatusName { get; set; } = string.Empty;
+
     public DateTime? DueDate { get; set; }
 }
